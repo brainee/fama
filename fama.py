@@ -1,5 +1,5 @@
 # %load fama.py
-import tushare as ts
+# import tushare as ts
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt

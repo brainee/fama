@@ -1,0 +1,26 @@
+# %run ./LinearRegression.ipynb
+# %run ./fama.py
+# %load ./fama.py 这将会使用外部脚本来代替cell的内容。你可以使用本地机器上的文件也可以使用一个URL.
+# %store命令可以让你在两个不同的notebook间传递变量。
+# 10. Jupyter Magic - %who:List all variables of global scope.不带参数的%who命令将会列出全局范围内存在的所有变量。如果传入参数，比如str，将会列出指定类型的所有变量。
+# %%time 将会给出cell的代码运行一次所花费的时间。
+# %timeit 使用Python的timeit模块，它将会执行一个语句100，000次(默认情况下)，然后给出运行最快3次的平均值
+# %timeit numpy.random.normal(size=100)
+# 12. Jupyter Magic - %%writefile and %pycat:Export the contents of a cell/Show the contents of an external script
+# 14. Jupyter Magic - Debugging with %pdb
+# 16. Executing Shell Commands !ls
+# !pip list | grep pandas
+# 在每个cell的开头使用相关的魔法命令来声明你想使用的 kernel：
+# %%bash
+# %%HTML
+# %%python2
+# %%python3
+# %%ruby
+# %%perl
+# 22. Multicursor support Jupyter 支持多光标操作，与 Sublime Text 类似。按住 Alt 进行点击和拖拽鼠标即可。
+
+# import os
+# from IPython.display import display, Image
+# names = [f for f in os.listdir('../images/') if f.endswith('.png')]
+# for name in names[:5]:
+#     display(Image('../images/' + name, width=100))
